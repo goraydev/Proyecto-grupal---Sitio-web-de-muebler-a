@@ -1,0 +1,118 @@
+ *{
+ 	/*Eliminando los padding y margenes por defecto*/
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+ }
+ body{
+ 	font-family: 'Ubuntu&display', sans-serif;
+	 background-color: bisque;
+ }
+ .contenedor{
+ 	margin: auto;
+ 	width: 90%;
+ 	max-width: 1000px;
+ 	display: flex;
+ 	flex-direction: row;
+ 	flex-wrap: wrap;
+ 
+ }
+ header{
+ 	width: 100%;
+ 	padding: 50px 0;
+ 	display: flex;
+ 	flex-direction: row;
+ 	justify-content: space-between;
+ 	align-items: center;
+ }
+
+ header .menu a{
+ 	color: black;
+ 	text-decoration: none;
+ 	margin-right: 40px;
+ 	font-size: 18px;
+	font-family: 'Grandstander', cursive;
+ }
+ header .menu a:hover{
+ 	text-decoration: underline;
+ }
+
+ .main{
+ 	background: rgba(184,178,178,0.5);
+ 	padding: 20px;
+ 	width: 70%;
+ }
+.main article .thumb{
+	margin-bottom: 20px;
+
+}
+.main article .thumb img{
+	width: 100%;
+	vertical-align: top;
+}
+.main article h2{
+	margin-bottom: 20px;
+	font-weight: normal;
+	font-size: 32px;
+}
+.main article p{
+	margin-bottom: 20px;
+	font-size: 14px;
+	line-height: 27px;
+}
+aside {
+	width: 30%;
+	background: #537dca;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+aside .add{
+	font-size: 30px;
+	text-align: center;
+	color: #fff;
+	padding: 50px 0;
+	background: #4264a2;
+}
+footer .redes-sociales{
+	background:black;
+	padding: 20px 0;
+}
+footer .redes-sociales .contenedor{
+	display: flex;
+	justify-content: center;
+}
+footer .redes-sociales a{
+	color: #ffff;
+	text-align: center;
+	width: 100px;
+	padding: 15px 0;
+	border-radius: 3px;
+	font-size: 30px;
+}
+
+footer .redes-sociales .facebook:hover{
+	background: #3b5998;
+}
+footer .redes-sociales .wsp:hover{
+	background: #BD2A96;
+}
+footer .redes-sociales .email:hover{
+	background: #bb0000;
+}
+.part_fin {
+	color: white;
+}
+@media screen and (max-width: 1000px) {
+	.main{
+		width: 100%;
+	}
+	aside{
+		width: 100%;
+		flex-direction: row;
+	}
+	aside .add{
+		width: 40%;
+	}
+}
