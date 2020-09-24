@@ -125,6 +125,9 @@ p {
 .thumb img{
 	border-radius: 8px;
 }
+.thumbboton img:hover{
+	border: 2px solid #537dca;
+}
 
 abbr[title],
 abbr[data-original-title] {
@@ -10403,4 +10406,9 @@ footer .redes-sociales .email:hover{
 	.main .trabajos .contenedor .contenedor-trabajos .trabajo{
 		width: 46%;
 	}
+}
+
+.thumbboton {
+	width: 100%;
+	margin-bottom: 10px;
 }
