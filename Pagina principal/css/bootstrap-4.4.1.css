@@ -68,10 +68,9 @@ body {
 }
 .contenedor{
  	width: 90%;
-	max-width: 1000px;
 	margin: auto;
-	padding-top: 20px;
 	overflow: hidden; /* */
+	
  
  }
  header{
@@ -89,9 +88,6 @@ body {
  	margin-right: 40px;
  	font-size: 18px;
 	font-family: 'Grandstander', cursive;
- }
- header .menu a:hover{
- 	text-decoration: underline;
  }
 header .title{
 	color: rgba(190,70,200);
@@ -125,9 +121,39 @@ p {
 .thumb img{
 	border-radius: 8px;
 }
+.thumbboton img{
+	border-radius: 8px;
+}
 .thumbboton img:hover{
 	border: 2px solid #537dca;
 }
+ul{
+	list-style: none;
+}
+
+.nav li a{
+	
+	color: black;
+	padding: 10px;
+	display: block;
+}
+.nav li a:hover{
+	background-color: grey;
+}
+.nav >li{
+	float: left;
+}
+.nav li ul{
+	display: none;
+	position: absolute;
+	min-width: 100px;
+	left: 800px;
+}
+
+.nav li:hover > ul{
+	display: block;
+}
+
 
 abbr[title],
 abbr[data-original-title] {
@@ -10310,6 +10336,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .trabajos {
+	background-color: bisque;
 	padding: 60px;
 }
 
@@ -10326,7 +10353,7 @@ a.text-dark:hover, a.text-dark:focus {
 	display: flex;
 	flex-direction: row;	
 	flex-wrap: wrap;
-	background: rgb(141, 129, 138 , 0.4);
+	
 	justify-content: space-between;
 }
 
@@ -10355,6 +10382,7 @@ a.text-dark:hover, a.text-dark:focus {
 	text-align: center;
 }
 
+
 @media screen and (max-width: 1000px){
 
 	/*Cambiamos el menu para un dispositivo móvil*/
@@ -10365,6 +10393,7 @@ a.text-dark:hover, a.text-dark:focus {
 		width: 46%;
 	}
 }
+
 footer .redes-sociales{
 	background:black;
 	padding: 20px 0;
