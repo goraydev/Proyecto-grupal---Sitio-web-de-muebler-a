@@ -40,16 +40,38 @@ function MM_swapImage() { //v3.0
 }
 </script>
 </head>
-<body onLoad="MM_preloadImages('imagenes/delivery-truck (1).png','imagenes/shopping-cart (1).png','../imagenes/delivery-truck (1).png','../imagenes/shopping-cart (1).png')">
+<body onLoad="MM_preloadImages('imagenes/delivery-truck (1).png','imagenes/shopping-cart (1).png','../imagenes/delivery-truck (1).png','../imagenes/shopping-cart (1).png','../imagenes/tienda1.png')">
+	<!--Para el boton flotante-->
+		<div class="container">
+		<input type="checkbox" id="btn-mas">
+		<div class="redes">
+			<a href="#" class="icon-reclamaciones"><img src="../imagenes/libro-de-lectura.png" title="Hacer reclamaciones" width="50"></a>
+			<a href="#" class="icon-reclamaciones"><img src="../imagenes/whatsapp.png" title="Contactar" width="50"></a>
+		</div>
+		<div class="btn-mas">
+			<label for = "btn-mas" class="icon-reclamaciones">
+				<img src="../imagenes/flotante3.png" width="50">
+			</label>
+		</div>
+	</div>
+	
+	<!--Fin-->
 	<div class="contenedor">
 		<header id="header" class="">
 			<div class="logo">
 				<img src="../imagenes/logo- proyecto.jpeg" alt="" width="200">
 			</div>
 			<nav class="menu">
-				<a href="../Pagina principal/index.html"><img src="../imagenes/home.png" width="40"></a>	
-				<a href="">Visitanos</a>
-				<a href="#">Contáctos</a>
+				<ul class="nav">
+					<li><a href="../Pagina principal/index.html"><img src="../imagenes/home.png" width="40"><br>Inicio</a>	</li>
+					<li><a href="#"><img src="../imagenes/category.png" width="40"><br>Categorias</a>
+						<ul class="sublista">
+						  <li><a href="../Sección - muebles/Salas.html">Salas </a></li>
+							<li><a href="../Sección - muebles/Comedor.html">Comedor</a></li>
+					  </ul>
+					</li>
+					<li><a href="#"><img src="../imagenes/map.png" width="40"><br>Visítanos</a></li>
+				</ul>
 			</nav>
 			
 		</header>
@@ -88,7 +110,11 @@ function MM_swapImage() { //v3.0
 			<div class="add">
 				<p>Precio</p>
 		    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','../imagenes/shopping-cart (1).png',1)" title="Agregar a la bolsa"><img src="../imagenes/shopping-cart.png" alt="" width="50" id="Image5"></a> 
-			<h6>S/.2499</h6>
+			<h6>S/.2499</h6><br>
+			
+			  <div class="cantidad">
+				<a>Cantidad</a> <input type="number">
+				</div>
 			</div>
 			<div class="add">
 			<!-- Start WOWSlider.com BODY section -->
@@ -114,9 +140,12 @@ function MM_swapImage() { //v3.0
 		  <div class="add">
 				<p>Tipo de entrega</p>
 			  	<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','../imagenes/delivery-truck (1).png',1)" title="Pedir Delivery"><img src="../imagenes/delivery-truck.png" alt="" width="50" id="Image4"></a>
-<h6>Despacho a domicilio</h6>
-				
+
+		  		<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('tienda','','../imagenes/tienda1.png',1)" title="Retiro en tienda"><img src="../imagenes/tienda.png" alt="" width="50" id="tienda"></a>
+			  <br>
+			  <a class="boton">Sigue tu pedido</a>
 			</div>
+			
 		</aside>
 	</div>
 <footer class="final">

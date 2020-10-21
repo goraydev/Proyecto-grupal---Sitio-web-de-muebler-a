@@ -67,10 +67,9 @@ body {
   background-color: #fff;
 }
 .contenedor{
- 	width: 90%;
+ 	
 	margin: auto;
 	overflow: hidden; /* */
-	
  
  }
  header{
@@ -87,6 +86,7 @@ body {
  	text-decoration: none;
  	margin-right: 40px;
  	font-size: 18px;
+	 text-align: center;
 	font-family: 'Grandstander', cursive;
  }
 header .title{
@@ -118,6 +118,7 @@ p {
   margin-bottom: 1rem;
 }
 
+
 .thumb img{
 	border-radius: 8px;
 }
@@ -131,13 +132,18 @@ ul{
 	list-style: none;
 }
 
+/*Paralas secciones del navegador*/
 .nav li a{
 	
 	color: black;
 	padding: 10px;
 	display: block;
 }
-.nav li a:hover{
+.nav .sublista li a{
+	background: rgba(43,40,40,1.00);
+	color:aliceblue;
+}
+.nav .sublista li a:hover{
 	background-color: grey;
 }
 .nav >li{
@@ -147,13 +153,57 @@ ul{
 	display: none;
 	position: absolute;
 	min-width: 100px;
-	left: 800px;
+	left: 1010px;
 }
 
 .nav li:hover > ul{
 	display: block;
 }
 
+/*Para el boton flotante*/
+#btn-mas{
+	display: none;
+	
+}
+.container{
+	position: fixed;
+	bottom: 50px;
+	left: 20px;
+}
+
+.redes a, .icon-reclamaciones{
+	display: block;
+	text-decoration: none;
+	background:#FFFFFF;
+	color: black;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	box-shadow: 0px 1px 10px;
+	text-align: center;
+	transition: all 500ms ease;
+	
+}
+
+.redes a:hover{
+
+}
+.redes a{
+	margin-bottom: -15px;
+	opacity: 0;
+	visibility: hidden;
+}
+#btn-mas:checked~ .redes a{
+	margin-bottom: 10px;
+	opacity: 1;
+	visibility: visible;
+}
+.icon-reclamaciones{
+	cursor: pointer;
+}
+#btn-mas:checked ~ .btn-mas .icon-reclamaciones{
+	transform: rotate(360deg);
+}
 
 abbr[title],
 abbr[data-original-title] {
@@ -10387,7 +10437,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 	/*Cambiamos el menu para un dispositivo móvil*/
 	header .menu{
-		text-align: right;
+		text-align: center;
 	}
 	.trabajos .contenedor .contenedor-trabajos .trabajo{
 		width: 46%;

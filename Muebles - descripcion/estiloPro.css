@@ -5,8 +5,9 @@
  	box-sizing: border-box;
  }
  body{
+	background-color: bisque;
  	font-family: 'Ubuntu&display', sans-serif;
-	 background-color: bisque;
+	 
  }
  .contenedor{
  	margin: auto;
@@ -19,7 +20,7 @@
  }
  header{
  	width: 100%;
- 	padding: 50px 0;
+ 	padding: 25px;
  	display: flex;
  	flex-direction: row;
  	justify-content: space-between;
@@ -33,9 +34,38 @@
  	font-size: 18px;
 	font-family: 'Grandstander', cursive;
  }
- header .menu a:hover{
- 	text-decoration: underline;
- }
+ul{
+	list-style: none;
+}
+
+/*Para las secciones del navegador*/
+.nav li a{
+	
+	color: black;
+	padding: 10px;
+	display: block;
+}
+.nav .sublista li a{
+	background: rgba(43,40,40,1.00);
+	color:aliceblue;
+}
+.nav .sublista li a:hover{
+	background-color: grey;
+}
+.nav >li{
+	float: left;
+}
+.nav li ul{
+	display: none;
+	position: absolute;
+	min-width: 100px;
+	left: 940px;
+}
+
+.nav li:hover > ul{
+	display: block;
+}
+
 
  .main{
  	background: rgba(184,178,178,0.5);
@@ -62,7 +92,7 @@
 }
 aside {
 	width: 30%;
-	background: #537dca;
+	background: rgba(184,178,178,1.00);
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -71,10 +101,74 @@ aside {
 aside .add{
 	font-size: 30px;
 	text-align: center;
-	color: #fff;
-	padding: 50px 0;
-	background: #4264a2;
+	color: black;
+	padding: 20px 0;
+
 }
+.boton{
+		position: relative;
+		right: 0px;
+		color: black;	
+		background-color: bisque;
+		border: 3px;
+		border-radius: 30px;
+	    text-align: center;
+		cursor: pointer;
+		padding: 5px;
+		font-size: 20px;
+		font-weight: bold;
+
+	}
+	.boton:hover{
+		background-color: rgba(231,201,201,.7);
+		border: 3px solid black;
+	}
+/*Para el boton flotante*/
+#btn-mas{
+	display: none;
+	
+}
+.container{
+	position: fixed;
+	bottom: 50px;
+	left: 20px;
+}
+
+.redes a, .icon-reclamaciones{
+	display: block;
+	text-decoration: none;
+	background:#FFFFFF;
+	color: black;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	box-shadow: 0px 1px 10px;
+	text-align: center;
+	transition: all 500ms ease;
+	
+}
+
+.redes a:hover{
+
+}
+.redes a{
+	margin-bottom: -15px;
+	opacity: 0;
+	visibility: hidden;
+}
+#btn-mas:checked~ .redes a{
+	margin-bottom: 10px;
+	opacity: 1;
+	visibility: visible;
+}
+.icon-reclamaciones{
+	cursor: pointer;
+}
+#btn-mas:checked ~ .btn-mas .icon-reclamaciones{
+	transform: rotate(360deg);
+}
+
+
 footer .redes-sociales{
 	background:black;
 	padding: 20px 0;
@@ -115,4 +209,27 @@ footer .redes-sociales .email:hover{
 	aside .add{
 		width: 40%;
 	}
+}
+
+.cantidad {
+	font-size: 20px;
+	
+}
+.cantidad input{
+	width: 50px;
+	height: 30px;
+}
+
+.menu {
+	text-align: center;
+}
+
+.nav {
+	display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
 }
