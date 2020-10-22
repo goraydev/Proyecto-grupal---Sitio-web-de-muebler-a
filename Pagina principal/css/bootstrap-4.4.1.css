@@ -153,7 +153,7 @@ ul{
 	display: none;
 	position: absolute;
 	min-width: 100px;
-	left: 1010px;
+	left: 1420px;
 }
 
 .nav li:hover > ul{
@@ -10389,6 +10389,7 @@ a.text-dark:hover, a.text-dark:focus {
 .trabajos {
 	background-color: bisque;
 	padding: 60px;
+	text-align: center;
 }
 
 .titulo {
@@ -10475,6 +10476,7 @@ footer .redes-sociales .email:hover{
 .part_fin {
 	color: white;
 	text-align: center;
+	font-size: 14px;
 }
 
 @media screen and (max-width: 800px){

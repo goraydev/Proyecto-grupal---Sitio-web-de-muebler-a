@@ -198,6 +198,8 @@ footer .redes-sociales .email:hover{
 }
 .part_fin {
 	color: white;
+	font-size: 14px;
+	text-align: center;
 }
 @media screen and (max-width: 1000px) {
 	.main{
