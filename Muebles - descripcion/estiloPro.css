@@ -149,7 +149,8 @@ aside .add{
 }
 
 .redes a:hover{
-
+	background: #00bb2d;
+	border-color: black;
 }
 .redes a{
 	margin-bottom: -15px;
