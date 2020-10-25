@@ -1,0 +1,26 @@
+/* ----- ----- FOOTER ----- ----- */
+  footer .redes-sociales {
+    background: #23272b;
+    padding: 60px 0;
+    text-align: center; }
+    
+    footer .redes-sociales .contenedor {
+      display: flex;
+      justify-content: center; }
+      footer .redes-sociales .contenedor a {
+        color: #fff;
+        text-align: center;
+        width: 100px;
+        font-size: 30px;
+        padding: 15px 0;
+        display: block;
+        margin: 0 20px;
+        border-radius: 3px; }
+      footer .redes-sociales .contenedor .twitter:hover {
+          background: #55acee; }
+      footer .redes-sociales .contenedor .facebook:hover {
+          background: #3b5998; }
+      footer .redes-sociales .contenedor .youtube:hover {
+          background: #971b1b; }
+      footer .redes-sociales .contenedor .instagram:hover {
+          background: #952e89; }
