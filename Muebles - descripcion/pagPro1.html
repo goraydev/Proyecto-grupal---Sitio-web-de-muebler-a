@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Compra</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@600&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,200&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
@@ -41,45 +42,62 @@ function MM_swapImage() { //v3.0
 </script>
 </head>
 <body onLoad="MM_preloadImages('imagenes/delivery-truck (1).png','imagenes/shopping-cart (1).png','../imagenes/delivery-truck (1).png','../imagenes/shopping-cart (1).png','../imagenes/tienda1.png')">
-	<!--Para el boton flotante-->
-		<div class="container">
-		<input type="checkbox" id="btn-mas">
-		<div class="redes">
-			<a href="#" class="icon-reclamaciones"><img src="../imagenes/libro-de-lectura.png" title="Hacer reclamaciones" width="50"></a>
-			<a href="#" class="icon-reclamaciones"><img src="../imagenes/whatsapp.png" title="Contactar" width="50"></a>
-		</div>
-		<div class="btn-mas">
-			<label for = "btn-mas" class="icon-reclamaciones">
-				<img src="../imagenes/flotante3.png" width="50">
-			</label>
-		</div>
-	</div>
-	
-	<!--Fin-->
-	<div class="contenedor">
-		<header id="header" class="">
-			<div class="logo">
-				<img src="../imagenes/logo- proyecto.jpeg" alt="" width="200">
-			</div>
-			<nav class="menu">
-				<ul class="nav">
-					<li><a href="../Pagina principal/index.html"><img src="../imagenes/home.png" width="40"><br>Inicio</a>	</li>
-					<li><a href="#"><img src="../imagenes/category.png" width="40"><br>Categorias</a>
-						<ul class="sublista">
-						  <li><a href="../Sección - muebles/Salas.html">Salas </a></li>
-							<li><a href="../Sección - muebles/Comedor.html">Comedor</a></li>
-					  </ul>
-					</li>
-					<li><a href="#"><img src="../imagenes/map.png" width="40"><br>Visítanos</a></li>
-				</ul>
-			</nav>
-			
-		</header>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+			<div class="container">
+				<a href="#" class="navbar-brand"><img src="../imagenes/logo normal.png" width="200"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Alternar Menu">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
+				<div class="collapse navbar-collapse" id="menuNavegacion">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a href="../Pagina principal/index.html" class="nav-link"><img src="../imagenes/home.png" width="40"><br>Inicio</a>
+						</li>
+						<!-- Boton Desplegable -->
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
+								<img src="../imagenes/category.png" width="40"><br>Categorias
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a href="../Sección - muebles/Salas.html" class="dropdown-item">Sala</a>
+								<a href="#" class="dropdown-item">Comedor</a>
+								<a href="#" class="dropdown-item">Escritorios</a>
+								<a href="#" class="dropdown-item">Libreros</a>
+								<a href="#" class="dropdown-item">Roperos</a>
+								<a href="#" class="dropdown-item">Cómodas</a>
+								<a href="#" class="dropdown-item">Camas</a>
+								<a href="#" class="dropdown-item">Colchones</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link"><img src="../imagenes/map.png" width="40"><br>Visítanos</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link"><img src="../imagenes/information.png" width="40"><br>Acerca de</a>
+						</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<li class="nav-item"><br>
+							<form class="form-inline my-2 my-lg-0" action="">
+								<input type="text" class="form-control mr-sm-2" type="search" placeholder="Buscar">
+								<button class="btn btn-dark my-2 my-sm-0" type="submit">Buscar</button>
+							</form>
+						</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<li class="nav-item">
+							<a href="#" class="nav-link">;<img src="../imagenes/user.png" width="40"><br>Iniciar sesión</a>
+						</li>
+					</ul>
+
+					
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="contenedor">
 		<section class="main">
 			<article>
 				<div class="thumb">
-					<img src="../imagenes/1.jpg" alt="" width="500">
+					<img src="../imagenes/paul-weaver-nWidMEQsnAQ-unsplash.jpg" alt="" width="100">
 				</div>
 				<h2>Sofá Bolt en L</h2>
 				<h4>Características</h4>
@@ -109,8 +127,9 @@ function MM_swapImage() { //v3.0
 		<aside>
 			<div class="add">
 				<p>Precio</p>
-		    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','../imagenes/shopping-cart (1).png',1)" title="Agregar a la bolsa"><img src="../imagenes/shopping-cart.png" alt="" width="50" id="Image5"></a> 
-			<h6>S/.2499</h6><br>
+			<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','../imagenes/shopping-cart (1).png',1)" title="Agregar a la bolsa"><img src="../imagenes/shopping-cart.png" alt="" width="50" id="Image5"></a> 
+			<h6>Antes S/.2499</h6>
+			<p class="text-danger">Ahora S/2200</p>
 			
 			  <div class="cantidad">
 				<a>Cantidad</a> <input type="number">
@@ -148,27 +167,41 @@ function MM_swapImage() { //v3.0
 			
 		</aside>
 	</div>
-<footer class="final">
+<footer class="container-fluid">
 		
-  <section class="redes-sociales">
-			<div class="contenedor">
-				<h5 class="part_fin">Síguenos</h5>
-				<a target = "_blank" href="https://web.facebook.com/?_rdc=1&_rdr" class="facebook">
-					<i class="fab fa-facebook-square" ></i>
-				</a>
-				<a target = "_blank" href="https://www.youtube.com/" class="email">
-					<i class="fab fa-youtube"></i>
-				</a>
-				<a target = "_blank" href="https://instagram.com/" class="wsp">
-					<i class="fab fa-instagram" aria-hidden="true"></i>
-				</a>
-				
+	<section class="redes-sociales">
+			
+		<div class="row border-top py-5">
+			<div class="col">
+				<p class="text-light">Acerca de la empresa</p>
+				<p class="text-secondary">&nbsp;Somos una tienda que &nbsp;comercializa DE TODO para &nbsp;el hogar, oficina o negocio.</p>
 			</div>
-		</section>
+			<div class="col">
+				<p class="text-light">Misión</p>
+				<p class="text-secondary"></span>Brindar el mejor servicio y al mejor precio <br>con todos los protocolos de seguridad a todos nuestros clientes.</p>
+			</div>
+			<div class="col">
+				<p class="text-light">Visión</p>
+				<p class="text-secondary">Para este 2020 ser una de las mejores empresas de muebleria, brindando el mejor servicio en calidad y atención, <br>manteniéndonos como una empresa sólida y confiable </p>
+			</div>
+			<div class="col">
+				<p class="text-light">Síguenos</p>
+				<div class="contenedor">
+					<a class="twitter" href="http://www.twitter.com/falconmasters"><i class="fab fa-twitter"></i></a>
+					<a class="facebook" href="http://www.facebook.com/falconmasters"><i class="fab fa-facebook-square"></i></a>
+					<a class="youtube" href="http://www.facebook.com/falconmasters"><i class="fab fa-youtube"></i></a>
+					<a class="instagram" href="http://www.instagram.com/falconmasters"><i class="fab fa-instagram"></i></a>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+</footer>
+	
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
-	</footer>
-	
-	
 <script src="../js/jquery-3.4.1.min.js"></script>
 <script src="../js/popper.min.js"></script>
 <script src="../js/bootstrap-4.4.1.js"></script>

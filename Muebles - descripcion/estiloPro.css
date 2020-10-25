@@ -11,60 +11,13 @@
  }
  .contenedor{
  	margin: auto;
- 	width: 90%;
- 	max-width: 1000px;
+ 	width: 92%;
+ 	max-width: 1300px;
  	display: flex;
  	flex-direction: row;
  	flex-wrap: wrap;
  
  }
- header{
- 	width: 100%;
- 	padding: 25px;
- 	display: flex;
- 	flex-direction: row;
- 	justify-content: space-between;
- 	align-items: center;
- }
-
- header .menu a{
- 	color: black;
- 	text-decoration: none;
- 	margin-right: 40px;
- 	font-size: 18px;
-	font-family: 'Grandstander', cursive;
- }
-ul{
-	list-style: none;
-}
-
-/*Para las secciones del navegador*/
-.nav li a{
-	
-	color: black;
-	padding: 10px;
-	display: block;
-}
-.nav .sublista li a{
-	background: rgba(43,40,40,1.00);
-	color:aliceblue;
-}
-.nav .sublista li a:hover{
-	background-color: grey;
-}
-.nav >li{
-	float: left;
-}
-.nav li ul{
-	display: none;
-	position: absolute;
-	min-width: 100px;
-	left: 940px;
-}
-
-.nav li:hover > ul{
-	display: block;
-}
 
 
  .main{
@@ -96,13 +49,15 @@ aside {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
+	text-align: center;
 	justify-content: space-between;
 }
 aside .add{
 	font-size: 30px;
 	text-align: center;
 	color: black;
-	padding: 20px 0;
+	margin-bottom: auto;
+	padding: 2px 0;
 
 }
 .boton{
@@ -123,97 +78,6 @@ aside .add{
 		background-color: rgba(231,201,201,.7);
 		border: 3px solid black;
 	}
-/*Para el boton flotante*/
-#btn-mas{
-	display: none;
-	
-}
-.container{
-	position: fixed;
-	bottom: 50px;
-	left: 20px;
-}
-
-.redes a, .icon-reclamaciones{
-	display: block;
-	text-decoration: none;
-	background:#FFFFFF;
-	color: black;
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	box-shadow: 0px 1px 10px;
-	text-align: center;
-	transition: all 500ms ease;
-	
-}
-
-.redes a:hover{
-	background: #00bb2d;
-	border-color: black;
-}
-.redes a{
-	margin-bottom: -15px;
-	opacity: 0;
-	visibility: hidden;
-}
-#btn-mas:checked~ .redes a{
-	margin-bottom: 10px;
-	opacity: 1;
-	visibility: visible;
-}
-.icon-reclamaciones{
-	cursor: pointer;
-}
-#btn-mas:checked ~ .btn-mas .icon-reclamaciones{
-	transform: rotate(360deg);
-}
-
-
-footer .redes-sociales{
-	background:black;
-	padding: 20px 0;
-}
-footer .redes-sociales .contenedor{
-	display: flex;
-	justify-content: center;
-}
-footer .redes-sociales a{
-	color: #ffff;
-	text-align: center;
-	width: 100px;
-	padding: 15px 0;
-	border-radius: 3px;
-	font-size: 30px;
-}
-
-footer .redes-sociales .facebook:hover{
-	background: #3b5998;
-}
-footer .redes-sociales .wsp:hover{
-	background: #BD2A96;
-}
-footer .redes-sociales .email:hover{
-	background: #bb0000;
-}
-.part_fin {
-	color: white;
-	font-size: 14px;
-	text-align: center;
-}
-@media screen and (max-width: 1000px) {
-	.main{
-		width: 100%;
-	}
-	aside{
-		width: 100%;
-		flex-direction: row;
-	}
-	aside .add{
-		width: 40%;
-	}
-}
-
 .cantidad {
 	font-size: 20px;
 	
@@ -235,4 +99,88 @@ footer .redes-sociales .email:hover{
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+}
+/* ----- ----- FOOTER ----- ----- */
+footer .redes-sociales {
+    background: #23272b;
+    padding: 60px 0;
+    text-align: center; }
+    
+    footer .redes-sociales .contenedor {
+      display: flex;
+      justify-content: center; }
+      footer .redes-sociales .contenedor a {
+        color: #fff;
+        text-align: center;
+        width: 100px;
+        font-size: 30px;
+        padding: 15px 0;
+        display: block;
+        margin: 0 20px;
+        border-radius: 3px; }
+      footer .redes-sociales .contenedor .twitter:hover {
+          background: #55acee; }
+      footer .redes-sociales .contenedor .facebook:hover {
+          background: #3b5998; }
+      footer .redes-sociales .contenedor .youtube:hover {
+          background: #971b1b; }
+      footer .redes-sociales .contenedor .instagram:hover {
+          background: #952e89; }
+
+/*Parte responsive*/
+@media screen and (max-width: 800px) {
+	.main {
+		width: 100%;
+	}
+
+	aside {
+		width: 100%;
+		flex-direction:row;
+	}
+
+	aside .ad {
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	header {
+		flex-direction:column;
+		padding-bottom: 20px; 
+	}
+
+	header .menu {
+		width: 100%;
+		background: rgba(255,255,255,.2);
+		text-align: center;
+		padding: 20px;
+	}
+
+	header .logo {
+		margin-bottom: 20px;
+	}
+
+	header .menu a {
+		margin:0 20px; 
+	}
+
+	footer {
+		flex-direction:column;
+		text-align: center;
+	}
+
+	footer .autor {
+		order:2;
+	}
+
+	footer .redes-sociales {
+		order:1;
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	aside {
+		display: none;
+	}
 }
