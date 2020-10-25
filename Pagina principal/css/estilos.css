@@ -1,4 +1,7 @@
 /* ----- ----- FOOTER ----- ----- */
+header{
+  text-align: center;
+}
   footer .redes-sociales {
     background: #23272b;
     padding: 60px 0;
@@ -24,3 +27,50 @@
           background: #971b1b; }
       footer .redes-sociales .contenedor .instagram:hover {
           background: #952e89; }
+
+/*Para el boton flotante*/
+#btn-mas{
+	display: none;
+	
+}
+.boton-flotante{
+	position: fixed;
+	bottom: 50px;
+	left: 20px;
+}
+
+.redes a, .icon-reclamaciones{
+	display: block;
+	text-decoration: none;
+	background:#FFFFFF;
+	color: black;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	box-shadow: 0px 1px 10px;
+	text-align: center;
+	transition: all 500ms ease;
+	
+}
+
+.redes a:hover{
+	background: #00bb2d;
+	border-color: black;
+}
+.redes a{
+	margin-bottom: -15px;
+	opacity: 0;
+	visibility: hidden;
+}
+#btn-mas:checked~ .redes a{
+	margin-bottom: 10px;
+	opacity: 1;
+	visibility: visible;
+}
+.icon-reclamaciones{
+	cursor: pointer;
+}
+#btn-mas:checked ~ .btn-mas .icon-reclamaciones{
+	transform: rotate(360deg);
+}
+/*Fin de boton flotante*/
