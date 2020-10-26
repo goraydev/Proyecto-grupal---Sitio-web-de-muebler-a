@@ -9,6 +9,9 @@
  	font-family: 'Ubuntu&display', sans-serif;
 	 
  }
+ header{
+	text-align: center;
+  }
  .contenedor{
  	margin: auto;
  	width: 92%;
