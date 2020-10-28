@@ -37,6 +37,13 @@ function MM_swapImage() { //v3.0
   var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
 </script>
 <script src="http://use.edgefonts.net/alice:n4:default.js" type="text/javascript"></script>
 
@@ -51,6 +58,15 @@ body {
     background-size: cover;
 	
 }
+#CapaLogear {
+    position: absolute;
+    height: 150px;
+    width: 13.5%;
+    left: 79.44%;
+    top: 50px;
+    z-index: auto;
+    visibility: hidden;
+}
 </style>
    <!-- Start WOWSlider.com HEAD section -->
 <link rel="stylesheet" type="text/css" href="engine1/style.css" />
@@ -64,7 +80,7 @@ body {
   No modificar-->
 <header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-			<div class="container">
+			<div class="container" >
 				<a href="#" class="navbar-brand"><img src="../imagenes/logo normal.png" width="200"></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Alternar Menu">
 					<span class="navbar-toggler-icon"></span>
@@ -103,9 +119,31 @@ body {
 								<button class="btn btn-dark my-2 my-sm-0" type="submit">Buscar</button>
 							</form>
 						</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<li class="nav-item">
-							<a href="#" class="nav-link"><img src="../imagenes/user.png" width="40"><br>Iniciar sesión</a>
-						</li>
+					  <li class="nav-item">
+						<a href="#" class="nav-link" onClick="MM_showHideLayers('CapaLogear','','show')"><img src="../imagenes/user.png" width="40"							<br> Iniciar sesión</a>
+                            
+                              <td height="107" colspan="2" align="center" valign="top" bgcolor="#636875"><div class="Capa" id="CapaLogear" onMouseOver="MM_showHideLayers('CapaLogear','','show')">
+                                <table width="100%" border="0" cellspacing="0">
+                                  <tbody>
+                                    <tr>
+                                      <td colspan="2" bgcolor="#636875">
+                                        <span style="text-align: left"><label for="textfield" >Usuario:</label></span>
+                                      <input type="text" name="textfield" id="textfield"></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="2" bgcolor="#636875"><label for="password" color="blanck">Contraseña:</label>
+                                        <span style="text-align: left"></span>
+                                    <input type="password" name="password" id="password"></td>
+                                    </tr>
+                                    <tr>
+                                      <td width="50%" bgcolor="#636875" style="text-align: center"><a href="#">Entrar</a></td>
+                                      <td width="50%" bgcolor="#636875" style="text-align: center"><a href="#">Registrarse</a></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+      </div></td>
+                        </li>
+						<li class="nav-item"> </li>
 					</ul>
 
 					
@@ -117,13 +155,15 @@ body {
 <!--Fin
 No modificar-->
 
-<table width="100%" border="0" cellspacing="0">
+<table width="100%" border="0" cellspacing="0" onclick="MM_showHideLayers('CapaLogear','','hide')">
   <tbody>
     <tr>
-      <td height="101" colspan="7"><p>&nbsp;</p>        
+      <td height="101" colspan="7"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>       
           <p>
           <!-- Start WOWSlider.com BODY section -->
-<div id="wowslider-container1">
+          
+          <p>                    
+        <div id="wowslider-container1">
 <div class="ws_images"><ul>
 		<li><img src="data1/images/ms1.jpg" alt="MS1" title="" id="wows1_0"/></li>
 		<li><img src="data1/images/ms2.jpg" alt="MS2" title="" id="wows1_1"/></li>
@@ -187,7 +227,6 @@ No modificar-->
       <td align="center" valign="top" bgcolor="#343434">&nbsp;</td>
     </tr>
     <tr>
-      <td height="107" colspan="2" align="center" valign="top">&nbsp;</td>
     </tr>
   </tbody>
 </table>
