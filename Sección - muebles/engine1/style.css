@@ -48,27 +48,29 @@
 	/*table-layout:fixed;*/
 }
 #wowslider-container1 .ws_images ul li{
-	position: relative;
-	width:1%;
-	height:100%;
-	line-height:0; /*opera*/
-	overflow: hidden;
-	float:left;
-	/*font-size:0;*/
-	padding:0 0 0 0 !important;
-	margin:0 0 0 0 !important;
+    position: relative;
+    width: 1%;
+    height: 100%;
+    line-height: 0; /*opera*/
+    overflow: hidden;
+    float: left;
+    /*font-size:0;*/
+    padding: 0 0 0 0 !important;
+    margin: 0 0 0 0 !important;
+    z-index: 1;
 }
 
 #wowslider-container1 .ws_images{
-	position: relative;
-	left:0;
-	top:0;
-	height:100%;
-	max-height:720px;
-	max-width: 1280px;
-	vertical-align: top;
-	border:none;
-	overflow: hidden;
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 100%;
+    max-height: 720px;
+    max-width: 1280px;
+    vertical-align: top;
+    border: none;
+    overflow: hidden;
+    z-index: 0;
 }
 #wowslider-container1 .ws_images ul a{
 	width:100%;
