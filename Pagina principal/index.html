@@ -10,26 +10,6 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 	<link rel="stylesheet" href="css/estilos.css">
 	<title>Muebleria Solis</title>
-    <style type="text/css">
-	#CapaLogear {
-    position: absolute;
-    height: 150px;
-    width: 13.5%;
-    left: 79.44%;
-    top: 55px;
-    z-index: 1;
-        visibility: hidden;
-}
-    </style>
-    <script type="text/javascript">
-function MM_showHideLayers() { //v9.0
-  var i,p,v,obj,args=MM_showHideLayers.arguments;
-  for (i=0; i<(args.length-2); i+=3) 
-  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
-    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
-    obj.visibility=v; }
-}
-</script>
 </head>
 <body>
 	<!--Seccion de boton flotante-->
@@ -88,30 +68,24 @@ function MM_showHideLayers() { //v9.0
 								<button class="btn btn-dark my-2 my-sm-0" type="submit">Buscar</button>
 							</form>
 						</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<li class="nav-item">
-							<a href="#" class="nav-link"><img src="../imagenes/user.png" width="40" onClick="MM_showHideLayers('CapaLogear','','show')" onMouseOut="MM_showHideLayers('CapaLogear','','hide')"><br>Iniciar sesión</a>
-							<div class="Capa" id="CapaLogear" onMouseOver="MM_showHideLayers('CapaLogear','','show')">
-							  <table width="100%" border="0" cellspacing="0">
-							    <tbody>
-							      <tr>
-							        <td colspan="2" bgcolor="#636875"><span style="text-align: left">
-							          <label for="textfield" >Usuario:</label>
-							          </span>
-							          <input type="text" name="textfield" id="textfield"></td>
-						          </tr>
-							      <tr>
-							        <td colspan="2" bgcolor="#636875"><label for="password" color="blanck">Contraseña:</label>
-							          <span style="text-align: left"></span>
-							          <input type="password" name="password" id="password"></td>
-						          </tr>
-							      <tr>
-							        <td width="50%" bgcolor="#636875" style="text-align: center"><a href="#">Entrar</a></td>
-							        <td width="50%" bgcolor="#636875" style="text-align: center"><a href="#">Registrarse</a></td>
-						          </tr>
-						        </tbody>
-						      </table>
-						  </div>
-						</li>
+
+						<!--Sección del formulario-->
+						<div class="formulario">
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
+									<img src="../imagenes/user.png" width="40"><br>Iniciar sesión
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<form class="form-inline my-2 my-lg-0" action="">
+										<input type="email" class="form-control mr-sm-2" type="search" placeholder="Ingrese su correo"><br><br>
+										<input type="password" class="form-control mr-sm-2" type="search" placeholder="Ingrese su contraseña"><br><br>
+										<button class="btn btn-dark my-2 my-sm-0" type="submit">Acceder</button>&nbsp;&nbsp;&nbsp;
+										<button class="btn btn-dark my-2 my-sm-0" type="submit">Registrarse</button>
+									</form>
+								</div>
+						
+							</li>
+						</div>
 					</ul>
 
 					
@@ -120,7 +94,7 @@ function MM_showHideLayers() { //v9.0
 		</nav>
 	</header>
 
-	<main class="container" onclick="MM_showHideLayers('CapaLogear','','hide')">
+	<main class="container">
 		<div class="row">
 			<div class="col">
 				<div class="carousel slide" id="slideshow" data-ride="carousel">
@@ -260,7 +234,7 @@ function MM_showHideLayers() { //v9.0
 		</div>
 	</main>
 
-	<footer class="container-fluid" onclick="MM_showHideLayers('CapaLogear','','hide')">
+	<footer class="container-fluid">
 		
 		<section class="redes-sociales">
 			

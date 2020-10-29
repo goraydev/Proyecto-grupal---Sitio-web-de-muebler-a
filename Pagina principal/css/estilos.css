@@ -84,3 +84,8 @@ div .dropdown-menu a:hover{
   background-color: rgb(0,0,0,0.2);
 }
 /*Fin de estilos para los card*/
+
+/*Estilo de formulario*/
+div .formulario li div{
+  background-color: rgba(83, 86, 94,0.5);
+}

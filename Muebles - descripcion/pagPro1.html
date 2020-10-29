@@ -10,7 +10,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,200&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="estiloPro.css">
 	<link href="../css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
 	<!-- Start WOWSlider.com HEAD section -->
@@ -82,13 +82,24 @@ function MM_swapImage() { //v3.0
 								<input type="text" class="form-control mr-sm-2" type="search" placeholder="Buscar">
 								<button class="btn btn-dark my-2 my-sm-0" type="submit">Buscar</button>
 							</form>
-						</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<li class="nav-item">
-							<a href="#" class="nav-link"><img src="../imagenes/user.png" width="40"><br>Iniciar sesión</a>
-						</li>
+						<!--Sección del formulario-->
+						<div class="formulario">
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
+									<img src="../imagenes/user.png" width="40"><br>Iniciar sesión
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<form class="form-inline my-2 my-lg-0" action="">
+										<input type="email" class="form-control mr-sm-2" type="search" placeholder="Ingrese su correo"><br><br>
+										<input type="password" class="form-control mr-sm-2" type="search" placeholder="Ingrese su contraseña"><br><br>
+										<button class="btn btn-dark my-2 my-sm-0" type="submit">Acceder</button>&nbsp;&nbsp;&nbsp;
+										<button class="btn btn-dark my-2 my-sm-0" type="submit">Registrarse</button>
+									</form>
+								</div>
+						
+							</li>
+						</div>
 					</ul>
-
-					
 				</div>
 			</div>
 		</nav>

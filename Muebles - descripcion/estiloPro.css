@@ -103,6 +103,7 @@ aside .add{
   margin-bottom: 0;
   list-style: none;
 }
+
 /* ----- ----- FOOTER ----- ----- */
 footer .redes-sociales {
     background: #23272b;
@@ -129,6 +130,9 @@ footer .redes-sociales {
           background: #971b1b; }
       footer .redes-sociales .contenedor .instagram:hover {
           background: #952e89; }
+div .dropdown-menu a:hover{
+	background-color: rgb(0,0,0,0.2);
+}
 
 /*Parte responsive*/
 @media screen and (max-width: 800px) {

@@ -74,3 +74,11 @@ header{
 	transform: rotate(360deg);
 }
 /*Fin de boton flotante*/
+
+div .dropdown-menu a:hover{
+  background-color: rgb(0,0,0,0.2);
+}
+/*Estilo de formulario*/
+div .formulario li div{
+  background-color: rgba(83, 86, 94,0.5);
+}
