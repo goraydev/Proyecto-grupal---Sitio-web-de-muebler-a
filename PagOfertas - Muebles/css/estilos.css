@@ -88,3 +88,49 @@ div .dropdown-menu a:hover{
 div .formulario li div{
   background-color: rgba(83, 86, 94,0.5);
 }
+
+/* --- Paginacion --- */
+.izquierda {
+	float: left;
+}
+
+.derecha {
+	float: right;
+}
+.paginacion {
+	width: 100%;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+
+.paginacion a{
+	display: inline-block;
+	padding: 15px 20px;
+	border-radius: 50px;
+	border:1px solid rgba(0, 0, 0, 0.2);
+	-webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  color: #23272b;
+	transition: all .3s ease;
+}
+
+.paginacion a:hover {
+	border:1px solid rgb(221, 61, 61);
+	text-decoration: none;
+}
+
+.paginacion .izquierda .fa {
+	margin-right: 10px;
+}
+.paginacion .derecha .fa {
+	margin-left: 10px;
+}
+
+/*Estilos para las promociones*/
+
+.tachado{
+  text-decoration: line-through;
+}
+.precio_actual{
+  color: red;
+}
