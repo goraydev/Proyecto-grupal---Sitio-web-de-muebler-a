@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Comedor</title>
+
 <!--Inicio de no modificar-->
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
@@ -10,11 +10,11 @@
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 <link rel="stylesheet" href="css/estilos.css">
-    <link rel="icon" type="image/png" href="../Imagenes/sofa.png">
+<link rel="icon" type="image/png" href="../Imagenes/sofa.png">
 <!--Fin de no modificar -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
 
+<title>Registrar</title>
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
 <script>
 var __adobewebfontsappname__="dreamweaver"
 
@@ -23,21 +23,7 @@ function MM_preloadImages() { //v3.0
     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
 
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
 function MM_showHideLayers() { //v9.0
   var i,p,v,obj,args=MM_showHideLayers.arguments;
   for (i=0; i<(args.length-2); i+=3) 
@@ -47,39 +33,40 @@ function MM_showHideLayers() { //v9.0
 }
 </script>
 <script src="http://use.edgefonts.net/alice:n4:default.js" type="text/javascript"></script>
-<!-- Start WOWSlider.com HEAD section -->
-<link rel="stylesheet" type="text/css" href="engine1/style.css" />
-<script type="text/javascript" src="engine1/jquery.js"></script>
-<!-- End WOWSlider.com HEAD section -->
+
 <style type="text/css">
 body,td,th {
     font-family: alice;
     font-style: normal;
     font-weight: 400;
+    color: #FFFFFF;
+    text-align: center;
 }
 body {
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     background-attachment: fixed;
+    background-size: cover;
+	
 }
-
-#CapaLogear {    position: absolute;
+#CapaLogear {
+    position: absolute;
     height: 150px;
     width: 13.5%;
     left: 79.44%;
-    top: 75px;
+    top: 50px;
     z-index: auto;
     visibility: hidden;
 }
 </style>
+ 
 </head>
 
-<body onLoad="MM_preloadImages('img/MS1se.gif','img/MS2se.gif','img/MS3se.gif','img/MS4se.gif','img/MS5se.gif','img/MS6se.gif','img/MS7se.gif','img/MS8se.gif')">
+<body>
+
 <!--Inicio
   No modificar-->
-  <header>
+<header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-			<div class="container">
+			<div class="container" >
 				<a href="#" class="navbar-brand"><img src="../imagenes/logo normal.png" width="200"></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Alternar Menu">
 					<span class="navbar-toggler-icon"></span>
@@ -97,7 +84,7 @@ body {
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<a href="../Sección - muebles/Salas.html" class="dropdown-item">Salas</a>
-								<a href="#" class="dropdown-item">Comedor</a>
+								<a href="../Sección - muebles/Comedor.html" class="dropdown-item">Comedor</a>
 								<a href="#" class="dropdown-item">Escritorios</a>
 								<a href="#" class="dropdown-item">Libreros</a>
 								<a href="#" class="dropdown-item">Roperos</a>
@@ -117,7 +104,7 @@ body {
 								<input type="text" class="form-control mr-sm-2" type="search" placeholder="Buscar">
 								<button class="btn btn-dark my-2 my-sm-0" type="submit">Buscar</button>
 							</form>
-            </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <!--Sección del formulario-->
 						<div class="formulario">
 							<li class="nav-item dropdown">
@@ -129,7 +116,9 @@ body {
 										<input type="email" class="form-control mr-sm-2" type="search" placeholder="Ingrese su correo"><br><br>
 										<input type="password" class="form-control mr-sm-2" type="search" placeholder="Ingrese su contraseña"><br><br>
 										<button class="btn btn-dark my-2 my-sm-0" type="submit">Acceder</button>&nbsp;&nbsp;&nbsp;
+										<a href="../pagingreso/Registro.html">
 										<button class="btn btn-dark my-2 my-sm-0" type="submit">Registrarse</button>
+										</a>
 									</form>
 								</div>
 						
@@ -145,71 +134,66 @@ body {
 
 <!--Fin
 No modificar-->
+
 <table width="100%" border="0" cellspacing="0" onclick="MM_showHideLayers('CapaLogear','','hide')">
   <tbody>
     <tr>
-      <td height="214" colspan="6"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>          
-        <p>
-          <!-- Start WOWSlider.com BODY section -->
-        <div id="wowslider-container1" >
-          <div class="ws_images" ><ul>
-              <li ><img src="data1/images/mc1.jpg" alt="MC1" title="" id="wows1_0" width="100%"/></li>
-              <li><img src="data1/images/mc2.jpg" alt="MC2" title="" id="wows1_1" width="100%"/></li>
-              <li><img src="data1/images/mc3.jpg" alt="MC3" title="" id="wows1_2" width="100%"/></li>
-              <li><img src="data1/images/mc4.jpg" alt="MC4" title="" id="wows1_3" width="100%"/></li>
-              <li><img src="data1/images/mc5.jpg" alt="slider html" title="" id="wows1_4"/></li>
-              <li><img src="data1/images/mc6.jpg" alt="MC6" title="" id="wows1_5"/></li>
-          </ul></div>
-          <div class="ws_bullets"><div>
-              <a href="#" title="MC1"><span><img src="data1/tooltips/mc1.jpg" alt="MC1" width="100%"/>1</span></a>
-              <a href="#" title="MC2"><span><img src="data1/tooltips/mc2.jpg" alt="MC2" width="100%"/>2</span></a>
-              <a href="#" title="MC3"><span><img src="data1/tooltips/mc3.jpg" alt="MC3" width="100%"/>3</span></a>
-              <a href="#" title="MC4"><span><img src="data1/tooltips/mc4.jpg" alt="MC4" width="100%"/>4</span></a>
-              <a href="#" title="MC5"><span><img src="data1/tooltips/mc5.jpg" alt="MC5" width="100%"/>5</span></a>
-              <a href="#" title="MC6"><span><img src="data1/tooltips/mc6.jpg" alt="MC6" width="100%"/>6</span></a>
-          </div></div><div class="ws_script" style="position:absolute;left:-99%"></div>
-          <div class="ws_shadow"></div>
-        </div>	
-        <script type="text/javascript" src="engine1/wowslider.js"></script>
-        <script type="text/javascript" src="engine1/script.js"></script>
-        <!-- End WOWSlider.com BODY section -->
-      </p></td>
+      <td height="101" colspan="4"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>       
+          <p>
+          
+          </p></td>
     </tr>
     <tr>
-      <td width="23.09%" rowspan="3">&nbsp;</td>
-      <td width="16.65%"  height="136" align="center" valign="top" bgcolor="#343434"><p>&nbsp;</p>
-          <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('comedor1','','img/MC1se.gif',1)"><img src="img/MC1.jpg" alt="" width="63.45%" height="63.45%" id="comedor1"></a></p></td>
-      <td width="16.65%" height="136" align="center" valign="top" bgcolor="#343434"><p>&nbsp;</p>
-          <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('comedor3','','img/MC3se.gif',1)"><img src="img/MC3.jpg" alt="" width="63.45%" height="63.45%" id="comedor3"></a></p></td>
-      <td width="16.65%" align="center" valign="top" bgcolor="#343434"><p>&nbsp;</p>
-          <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('comedor2','','img/MC2se.gif',1)"><img src="img/MC2.jpg" alt="" width="63.45%" height="63.45%" id="comedor2"></a></p></td>
-      <td width="12%" align="center" valign="top">&nbsp;</td>
-      <td width="12%">&nbsp;</td>
+      <td width="23%" rowspan="3">&nbsp;</td>
+      <td width="53.95%" align="center" valign="top" bgcolor="#343434" >
+          <p>&nbsp;</p>
+          <p>Bienvenido al registro, por favor llene sus datos en el formulario</p>
+        </td>
+        <td width="23%" rowspan="3">&nbsp;</td>
+        <tr>
+          <td align="left" valign="top" bgcolor="#343434" >NOMBRES Y APELLIDOS:
+            <label for="textfield"></label>
+            <input type="text" class="form-control mr-sm-2" type="search" placeholder="Ingrese sus nombres y apellidos">
+<p>&nbsp;</p>
+          CORREO ELECTRONICO:
+        <label for="textfield"></label>
+            <input type="email" class="form-control mr-sm-2" type="search" placeholder="Ingrese su correo electronico">
+      <p>&nbsp;</p>
+      CONTRASEÑA
+        <label for="textfield"></label>
+            <input type="password" class="form-control mr-sm-2" type="search" placeholder="Ingrese una contraseña">
+        <p>&nbsp;</p>
+      REPETIR CONTRASEÑA
+        <label for="textfield"></label>
+            <input type="password" class="form-control mr-sm-2" type="search" placeholder="Repita la contraseña">
+      <p>&nbsp;</p>
+      
+        
+              
+            </td>
+            
+        <tr>
+          <td align="left" valign="top" bgcolor="#343434" >
+              <a href="../Pagina principal/index.html">
+              <button class="btn btn-dark my-2 my-sm-0" type="submit">Cancelar</button>
+              </a>&nbsp;&nbsp;&nbsp;
+              <a href="../pagingreso/Registro.html">
+              <button class="btn btn-dark my-2 my-sm-0" type="submit">Registrarse</button>
+              </a>
+            <p>&nbsp;</p>
+        </td>
+        <tr>
+      
+      <td colspan="2" align="center" valign="top" width="23%">&nbsp;</td>
     </tr>
-    <tr>
-      <td height="174" align="center" valign="top" bgcolor="#343434"><p>&nbsp;</p>
-      <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('comedor4','','img/MC4se.gif',1)"><img src="img/MC4.jpg" alt="" width="63.45%" height="63.45%" id="comedor4"></a></p></td>
-      <td height="174" align="center" valign="top" bgcolor="#343434"><p>&nbsp;</p>
-      <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('comedor5','','img/MC5se.gif',1)"><img src="img/MC5.jpg" alt="" width="63.45%" height="63.45%" id="comedor5"></a></p></td>
-      <td align="center" valign="top" bgcolor="#343434"><p>&nbsp;</p>
-      <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('comedor6','','img/MC6se.gif',1)"><img src="img/MC6.jpg" alt="" width="63.45%" height="63.45%" id="comedor6"></a></p></td>
-      <td align="center" valign="top">&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td height="213" align="center" valign="top" bgcolor="#343434"><p>&nbsp;</p>
-      <p>&nbsp;</p></td>
-      <td height="213" align="center" valign="top" bgcolor="#343434">&nbsp;</td>
-      <td height="213" align="center" valign="top" bgcolor="#343434"><p>&nbsp;</p>
-      <p>&nbsp;</p></td>
-      <td height="213" align="center" valign="top">&nbsp;</td>
-      <td height="213">&nbsp;</td>
+      <td height="101" colspan="4"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>       
+          <p>
+          
+          </p></td>
     </tr>
   </tbody>
 </table>
 
-<!--Inicio
-  No modificar-->
 <footer class="container-fluid">
 		
   <section class="redes-sociales">
@@ -240,11 +224,15 @@ No modificar-->
   
   </section>
 </footer>
-
-  <script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+<!--Inicio
+  No modificar-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
   <!--Fin de no modificar-->
+
 </body>
 </html>
+
+
