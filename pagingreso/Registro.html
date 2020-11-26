@@ -56,6 +56,28 @@ body {
     z-index: auto;
     visibility: hidden;
 }
+    td{
+        opacity:0.7;
+    }
+    #bienvenida{
+        font-size:35px;
+    }
+   .redsocial  a {
+        color: #fff;
+        text-align: center;
+        width: 100px;
+        font-size: 40px;
+        padding: 10px 30px;      
+        margin: 0 20px;
+        border-radius: 3px; }
+    .redsocial   .twitter:hover {
+          background: #55acee; }
+      .redsocial   .facebook:hover {
+          background: #3b5998; }
+      .redsocial   .youtube:hover {
+          background: #971b1b; }
+      .redsocial   .instagram:hover {
+          background: #952e89; }
 </style>
  
 </head>
@@ -116,10 +138,8 @@ body {
 										<input type="email" class="form-control mr-sm-2" type="search" placeholder="Ingrese su correo"><br><br>
 										<input type="password" class="form-control mr-sm-2" type="search" placeholder="Ingrese su contraseña"><br><br>
 										<button class="btn btn-dark my-2 my-sm-0" type="submit">Acceder</button>&nbsp;&nbsp;&nbsp;
-										<a href="../pagingreso/Registro.html">
-										<button class="btn btn-dark my-2 my-sm-0" type="submit">Registrarse</button>
-										</a>
-									</form>
+										<button class="btn btn-dark my-2 my-sm-0" type="submit" onClick="MM_goToURL('parent','../pagingreso/Registro.html');return document.MM_returnValue">Registrarse</button>										
+								  </form>
 								</div>
 						
 							</li>
@@ -144,12 +164,20 @@ No modificar-->
           </p></td>
     </tr>
     <tr>
-      <td width="23%" rowspan="3">&nbsp;</td>
-      <td width="53.95%" align="center" valign="top" bgcolor="#343434" >
-          <p>&nbsp;</p>
-          <p>Bienvenido al registro, por favor llene sus datos en el formulario</p>
+      <td width="23%" rowspan="4">&nbsp;</td>
+      <td width="53.95%" align="center" valign="top" bgcolor="#343434"  >
+          <p id="bienvenida">BIENVENIDO AL REGISTRO</p>
+          <p>Registrese usando una red </p>
+          <div class="redsocial">
+        <a class="twitter" href="#"><i class="fab fa-twitter" width="20px"></i></a>
+        <a class="facebook" href="#"><i class="fab fa-facebook-square"></i></a>
+        <a class="youtube" href="#"><i class="fab fa-youtube"></i></a>
+        <a class="instagram" href="#"><i class="fab fa-instagram"></i></a>
+      </div>
         </td>
-        <td width="23%" rowspan="3">&nbsp;</td>
+        <td width="23%" rowspan="4">&nbsp;</td>
+        <tr>
+          <td align="center" valign="top" bgcolor="#343434"  >o llene sus datos en el formulario</td>
         <tr>
           <td align="left" valign="top" bgcolor="#343434" >NOMBRES Y APELLIDOS:
             <label for="textfield"></label>
