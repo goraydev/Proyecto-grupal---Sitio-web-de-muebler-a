@@ -45,6 +45,12 @@ function MM_showHideLayers() { //v9.0
     if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
     obj.visibility=v; }
 }
+    
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+  
 </script>
 <script src="http://use.edgefonts.net/alice:n4:default.js" type="text/javascript"></script>
 <!-- Start WOWSlider.com HEAD section -->

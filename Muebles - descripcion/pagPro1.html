@@ -39,7 +39,14 @@ function MM_swapImage() { //v3.0
   var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
+
 </script>
+    <script type="text/javascript">
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+    </script>
 </head>
 <body onLoad="MM_preloadImages('imagenes/delivery-truck (1).png','imagenes/shopping-cart (1).png','../imagenes/delivery-truck (1).png','../imagenes/shopping-cart (1).png','../imagenes/tienda1.png')">
 	<header>
@@ -94,7 +101,7 @@ function MM_swapImage() { //v3.0
 										<input type="email" class="form-control mr-sm-2" type="search" placeholder="Ingrese su correo"><br><br>
 										<input type="password" class="form-control mr-sm-2" type="search" placeholder="Ingrese su contraseña"><br><br>
 										<button class="btn btn-dark my-2 my-sm-0" type="submit">Acceder</button>&nbsp;&nbsp;&nbsp;
-										<button class="btn btn-dark my-2 my-sm-0" type="submit">Registrarse</button>
+										<button class="btn btn-dark my-2 my-sm-0" type="submit" onClick="MM_goToURL('parent','../pagingreso/Registro.html');return document.MM_returnValue">Registrarse</button>
 									</form>
 								</div>
 						

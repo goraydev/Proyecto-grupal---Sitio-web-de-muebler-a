@@ -11,8 +11,15 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 <link rel="stylesheet" href="css/estilos.css">
 <link rel="icon" type="image/png" href="../Imagenes/sofa.png">
+<script type="text/javascript" src="js/externo.js"></script>
 <!--Fin de no modificar -->
-
+<script>
+        
+       
+    </script>
+    
+    
+    
 <title>Registrar</title>
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
 <script>
@@ -181,19 +188,23 @@ No modificar-->
         <tr>
           <td align="left" valign="top" bgcolor="#343434" >NOMBRES Y APELLIDOS:
             <label for="textfield"></label>
-            <input type="text" class="form-control mr-sm-2" type="search" placeholder="Ingrese sus nombres y apellidos">
+            <input type="text" class="form-control mr-sm-2" id="nombre" type="search" placeholder="Ingrese sus nombres y apellidos">
+              <p class="errores"></p>
 <p>&nbsp;</p>
           CORREO ELECTRONICO:
         <label for="textfield"></label>
-            <input type="email" class="form-control mr-sm-2" type="search" placeholder="Ingrese su correo electronico">
+            <input type="email" class="form-control mr-sm-2" id="correo" type="search" placeholder="Ingrese su correo electronico">
+              <p class="errores"></p>
       <p>&nbsp;</p>
       CONTRASEÑA
         <label for="textfield"></label>
-            <input type="password" class="form-control mr-sm-2" type="search" placeholder="Ingrese una contraseña">
+            <input type="password" class="form-control mr-sm-2" id="contra1" type="search" placeholder="Ingrese una contraseña">
+              <p class="errores"></p>
         <p>&nbsp;</p>
       REPETIR CONTRASEÑA
         <label for="textfield"></label>
-            <input type="password" class="form-control mr-sm-2" type="search" placeholder="Repita la contraseña">
+            <input type="password" class="form-control mr-sm-2" id="contra2" type="search" placeholder="Repita la contraseña">
+              <p class="errores"></p>
       <p>&nbsp;</p>
       
         
@@ -205,9 +216,9 @@ No modificar-->
               <a href="../Pagina principal/index.html">
               <button class="btn btn-dark my-2 my-sm-0" type="submit">Cancelar</button>
               </a>&nbsp;&nbsp;&nbsp;
-              <a href="../pagingreso/Registro.html">
-              <button class="btn btn-dark my-2 my-sm-0" type="submit">Registrarse</button>
-              </a>
+              
+              <button class="btn btn-dark my-2 my-sm-0" type="submit" onclick="revisar();">Registrarse</button>
+              
             <p>&nbsp;</p>
         </td>
         <tr>
