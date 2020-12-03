@@ -12,6 +12,12 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/estilos.css">
 	<title>Ofertas Salas</title>
+    <script type="text/javascript">
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+    </script>
 </head>
 
 <body>
@@ -74,7 +80,7 @@
 											placeholder="Ingrese su contraseña"><br><br>
 										<button class="btn btn-dark my-2 my-sm-0"
 											type="submit">Acceder</button>&nbsp;&nbsp;&nbsp;
-										<button class="btn btn-dark my-2 my-sm-0" type="submit">Registrarse</button>
+										<button class="btn btn-dark my-2 my-sm-0" type="submit" onClick="MM_goToURL('parent','../pagingreso/Registro.html');return document.MM_returnValue">Registrarse</button>
 									</form>
 								</div>
 

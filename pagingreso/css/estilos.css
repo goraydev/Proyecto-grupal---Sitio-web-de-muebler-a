@@ -82,3 +82,9 @@ div .dropdown-menu a:hover{
 div .formulario li div{
   background-color: rgba(83, 86, 94,0.5);
 }
+
+.errores{
+    color: #B8080B;
+    font-weight: bold;
+    font-size: 25px;
+}
