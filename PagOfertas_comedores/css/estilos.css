@@ -1,0 +1,136 @@
+header{
+  text-align: center;
+}
+/* ----- ----- FOOTER ----- ----- */
+  footer .redes-sociales {
+    background: #23272b;
+    padding: 60px 0;
+    text-align: center; }
+    
+    footer .redes-sociales .contenedor {
+      display: flex;
+      justify-content: center; }
+      footer .redes-sociales .contenedor a {
+        color: #fff;
+        text-align: center;
+        width: 100px;
+        font-size: 30px;
+        padding: 15px 0;
+        display: block;
+        margin: 0 20px;
+        border-radius: 3px; }
+      footer .redes-sociales .contenedor .twitter:hover {
+          background: #55acee; }
+      footer .redes-sociales .contenedor .facebook:hover {
+          background: #3b5998; }
+      footer .redes-sociales .contenedor .youtube:hover {
+          background: #971b1b; }
+      footer .redes-sociales .contenedor .instagram:hover {
+          background: #952e89; }
+
+/*Para el boton flotante*/
+#btn-mas{
+	display: none;
+	
+}
+.boton-flotante{
+	position: fixed;
+	bottom: 50px;
+	left: 20px;
+}
+
+.redes a, .icon-reclamaciones{
+	display: block;
+	text-decoration: none;
+	background:#FFFFFF;
+	color: black;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	box-shadow: 0px 1px 10px;
+	text-align: center;
+	transition: all 500ms ease;
+	
+}
+
+.redes a:hover{
+	background: #00bb2d;
+	border-color: black;
+}
+.redes a{
+	margin-bottom: -15px;
+	opacity: 0;
+	visibility: hidden;
+}
+#btn-mas:checked~ .redes a{
+	margin-bottom: 10px;
+	opacity: 1;
+	visibility: visible;
+}
+.icon-reclamaciones{
+	cursor: pointer;
+}
+#btn-mas:checked ~ .btn-mas .icon-reclamaciones{
+	transform: rotate(360deg);
+}
+/*Fin de boton flotante*/
+
+/*Inicio de estilos para las card*/
+div .card:hover{
+  background-color: rgb(0,0,0,0.2);
+}
+div .dropdown-menu a:hover{
+  background-color: rgb(0,0,0,0.2);
+}
+/*Fin de estilos para los card*/
+
+/*Estilo de formulario*/
+div .formulario li div{
+  background-color: rgba(83, 86, 94,0.5);
+}
+
+/* --- Paginacion --- */
+.izquierda {
+	float: left;
+}
+
+.derecha {
+	float: right;
+}
+.paginacion {
+	width: 100%;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+
+.paginacion a{
+	display: inline-block;
+	padding: 15px 20px;
+	border-radius: 50px;
+	border:1px solid rgba(0, 0, 0, 0.2);
+	-webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  color: #23272b;
+	transition: all .3s ease;
+}
+
+.paginacion a:hover {
+	border:1px solid rgb(221, 61, 61);
+	text-decoration: none;
+}
+
+.paginacion .izquierda .fa {
+	margin-right: 10px;
+}
+.paginacion .derecha .fa {
+	margin-left: 10px;
+}
+
+/*Estilos para las promociones*/
+
+.tachado{
+  text-decoration: line-through;
+}
+.precio_actual{
+  color: red;
+}
