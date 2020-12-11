@@ -1,38 +1,57 @@
-function revisar(){
-    var nom=document.getElementById('nombre');
-    var cor=document.getElementById('correo');
-    var contr1=document.getElementById('contra1');
-    var contr2=document.getElementById('contra2');
-    let ver=false;
-    if(nom.value.length===0){
-        ver=true;
-        alert('por favor llene un nombre');
-        //('.errores').html('prueba');
-        //prueba();
-        document.getElementsByClassName('errores')[0].append('Llene un nombre');
-    }
-    if(cor.value.length===0){
-        ver=true;
-        alert('por favor llene un correo');
-        document.getElementsByClassName('errores')[1].append('Llene un correo');
-    }
-    if(contr1.value.length===0){
-        ver=true;
-        alert('por favor llene una contraseña');
-        document.getElementsByClassName('errores')[2].append('Llene una contraseña');
-    }
-    else{
-        if(contr1.value.toString()===contr2.value.toString()){
-            alert('La funcion esta desactivada por el momento; \nintente mas tarde');
-        }
-        else{
-            ver=true;
-            document.getElementsByClassName('errores')[2].append('Las contraseñas no coinciden');
-            document.getElementsByClassName('errores')[3].append('Las contraseñas no coinciden');
-        }
-    }
-    
-    if(ver===true){
-        alert('Por favor revise el o los errores');
+var formulario = document.getElementById('formulario'),
+    nombre = formulario.nombre,
+    correo = formulario.correo,
+    contra1 = formulario.contra1,
+    contra2 = formulario.contra2;
+var errores = document.getElementById('errores');
+var errores1 = document.getElementById('errores1');
+var errores2 = document.getElementById('errores2');
+var errores3 = document.getElementById('errores3');
+
+
+function ValidarNombre(e) {
+    if (nombre.value == '' || nombre.value == null) {
+        errores.innerHTML = 'Complete este campo'
+        e.preventDefault();
     }
 }
+
+function ValidarCorreo(e) {
+    if (correo.value == '' || correo == null) {
+        errores1.innerHTML = 'Complete este campo'
+        e.preventDefault();
+    }
+}
+
+function ValidarPasswords(e) {
+    if (contra1.value == "" || contra1.value == null) {
+        errores2.innerHTML = 'Obligatorio llenar este campo'
+        e.preventDefault();
+    } else if (contra2.value == "" || contra2.value == null) {
+        errores3.innerHTML = 'Obligatorio llenar este campo'
+        e.preventDefault();
+    } else {
+        if (contra1.value != contra2.value) {
+            errores3.innerHTML = 'Contraseñas diferentes, Intente de nuevo'
+            contra1.value = '';
+            contra2.value = '';
+            e.preventDefault();
+
+        } else {
+            alert('Excelente');
+        }
+    }
+}
+
+function ValidandoDatos(e) {
+    errores.innerHTML = '';
+    errores1.innerHTML = '';
+    errores2.innerHTML = '';
+    errores3.innerHTML = '';
+    ValidarNombre(e);
+    ValidarCorreo(e);
+    ValidarPasswords(e);
+}
+
+
+formulario.addEventListener('submit', ValidandoDatos);

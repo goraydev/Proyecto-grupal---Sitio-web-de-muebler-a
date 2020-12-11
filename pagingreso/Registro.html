@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <link rel="stylesheet" href="css/estilos.css">
   <link rel="icon" type="image/png" href="../Imagenes/sofa.png">
-  <script type="text/javascript" src="js/externo.js"></script>
+
   <!--Fin de no modificar -->
   <script>
 
@@ -214,34 +214,37 @@ No modificar-->
       <tr>
         <td align="center" valign="top" bgcolor="#343434">o llene sus datos en el formulario</td>
       <tr>
-        <td align="left" valign="top" bgcolor="#343434">NOMBRES Y APELLIDOS:
-          <label for="textfield"></label>
-          <input type="text" class="form-control mr-sm-2" id="nombre" type="search"
-            placeholder="Ingrese sus nombres y apellidos">
-          <p class="errores"></p>
-          <p>&nbsp;</p>
-          CORREO ELECTRONICO:
-          <label for="textfield"></label>
-          <input type="email" class="form-control mr-sm-2" id="correo" type="search"
-            placeholder="Ingrese su correo electronico">
-          <p class="errores"></p>
-          <p>&nbsp;</p>
-          CONTRASEÑA
-          <label for="textfield"></label>
-          <input type="password" class="form-control mr-sm-2" id="contra1" type="search"
-            placeholder="Ingrese una contraseña">
-          <p class="errores"></p>
-          <p>&nbsp;</p>
-          REPETIR CONTRASEÑA
-          <label for="textfield"></label>
-          <input type="password" class="form-control mr-sm-2" id="contra2" type="search"
-            placeholder="Repita la contraseña">
-          <p class="errores"></p>
-          <p>&nbsp;</p>
+        <form id="formulario">
+
+
+          <td align="left" valign="top" bgcolor="#343434">NOMBRES Y APELLIDOS:
+
+            <input type="text" class="form-control mr-sm-2" name="nombre" type="search"
+              placeholder="Ingrese sus nombres y apellidos">
+            <p class="errores" id="errores"></p>
+            <p>&nbsp;</p>
+            CORREO ELECTRONICO:
+
+            <input type="email" class="form-control mr-sm-2" name="correo" type="search"
+              placeholder="Ingrese su correo electronico">
+            <p class="errores" id="errores1"></p>
+            <p>&nbsp;</p>
+            CONTRASEÑA
+
+            <input type="password" class="form-control mr-sm-2" name="contra1" type="search"
+              placeholder="Ingrese una contraseña">
+            <p class="errores" id="errores2"></p>
+            <p>&nbsp;</p>
+            REPETIR CONTRASEÑA
+
+            <input type="password" class="form-control mr-sm-2" name="contra2" type="search"
+              placeholder="Repita la contraseña">
+            <p class="errores"  id="errores3"></p>
+            <p>&nbsp;</p>
+          </td>
 
 
 
-        </td>
 
       <tr>
         <td align="left" valign="top" bgcolor="#343434">
@@ -265,6 +268,8 @@ No modificar-->
 
         </p>
       </td>
+      </tr>
+      </form>
       </tr>
     </tbody>
   </table>
@@ -304,6 +309,7 @@ No modificar-->
   </footer>
   <!--Inicio
   No modificar-->
+  <script type="text/javascript" src="js/externo.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
