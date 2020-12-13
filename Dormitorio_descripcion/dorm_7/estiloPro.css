@@ -96,17 +96,13 @@ aside .add {
   list-style: none;
 }
 
-
 .tachado{
   text-decoration: line-through;
 }
 div .formulario li div{
   background-color: rgba(83, 86, 94,0.5);
 }
-.thumb img{
-  border: solid black;
-  border-radius: 10px;
-}
+
 
 /* ----- ----- FOOTER ----- ----- */
 footer .redes-sociales {
