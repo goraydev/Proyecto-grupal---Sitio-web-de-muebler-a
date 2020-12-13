@@ -88,3 +88,20 @@ div .dropdown-menu a:hover{
 div .formulario li div{
   background-color: rgba(83, 86, 94,0.5);
 }
+
+.caja { 
+color: #000000; 
+font-size: 18px; 
+font-weight: 400; 
+text-align: left; 
+background: #ffffff; 
+margin: 0 0 25px; 
+overflow: hidden; 
+padding: 20px; 
+border-radius: 35px 0px 35px 0px; 
+-moz-border-radius: 35px 0px 35px 0px; 
+-webkit-border-radius: 35px 0px 35px 0px; 
+border: 0.5px solid #cccccc;}
+
+#lateral { width: 800px; }
+#cabecera { height: 275px; }
