@@ -1,0 +1,203 @@
+* {
+  /*Eliminando los padding y margenes por defecto*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Ubuntu&display", sans-serif;
+}
+header {
+  text-align: center;
+}
+.contenedor {
+  margin: auto;
+  width: 92%;
+  max-width: 1300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main {
+  background: rgba(184, 178, 178, 0.5);
+  padding: 20px;
+  width: 70%;
+}
+.main article .thumb {
+  margin-bottom: 20px;
+}
+.main article .thumb img {
+  width: 100%;
+  vertical-align: top;
+}
+.main article h2 {
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 32px;
+}
+.main article p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 27px;
+}
+aside {
+  width: 30%;
+  background: rgba(184, 178, 178, 1);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+}
+aside .add {
+  font-size: 30px;
+  text-align: center;
+  color: black;
+  margin-bottom: auto;
+  padding: 2px 0;
+}
+.boton {
+  position: relative;
+  right: 0px;
+  color: black;
+  background-color: bisque;
+  border: 3px;
+  border-radius: 30px;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.boton:hover {
+  background-color: rgba(231, 201, 201, 0.7);
+  border: 3px solid black;
+}
+.cantidad {
+  font-size: 20px;
+}
+.cantidad input {
+  width: 50px;
+  height: 30px;
+}
+
+.menu {
+  text-align: center;
+}
+
+.nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.tachado{
+  text-decoration: line-through;
+}
+div .formulario li div{
+  background-color: rgba(83, 86, 94,0.5);
+}
+.thumb img{
+  border: solid black;
+  border-radius: 10px;
+}
+
+/* ----- ----- FOOTER ----- ----- */
+footer .redes-sociales {
+  background: #23272b;
+  padding: 60px 0;
+  text-align: center;
+}
+
+footer .redes-sociales .contenedor {
+  display: flex;
+  justify-content: center;
+}
+footer .redes-sociales .contenedor a {
+  color: #fff;
+  text-align: center;
+  width: 100px;
+  font-size: 30px;
+  padding: 15px 0;
+  display: block;
+  margin: 0 20px;
+  border-radius: 3px;
+}
+footer .redes-sociales .contenedor .twitter:hover {
+  background: #55acee;
+}
+footer .redes-sociales .contenedor .facebook:hover {
+  background: #3b5998;
+}
+footer .redes-sociales .contenedor .youtube:hover {
+  background: #971b1b;
+}
+footer .redes-sociales .contenedor .instagram:hover {
+  background: #952e89;
+}
+div .dropdown-menu a:hover {
+  background-color: rgb(0, 0, 0, 0.2);
+}
+
+/*Parte responsive*/
+@media screen and (max-width: 800px) {
+  .main {
+    width: 100%;
+  }
+
+  aside {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  aside .ad {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+
+  header .menu {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    padding: 20px;
+  }
+
+  header .logo {
+    margin-bottom: 20px;
+  }
+
+  header .menu a {
+    margin: 0 20px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .autor {
+    order: 2;
+  }
+
+  footer .redes-sociales {
+    order: 1;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  aside {
+    display: none;
+  }
+}
