@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Compra</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="estiloPro.css">
+	<link href="../css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+	<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section -->
+	<script type="text/javascript">
+		function MM_swapImgRestore() { //v3.0
+			var i, x, a = document.MM_sr; for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+		}
+		function MM_preloadImages() { //v3.0
+			var d = document; if (d.images) {
+				if (!d.MM_p) d.MM_p = new Array();
+				var i, j = d.MM_p.length, a = MM_preloadImages.arguments; for (i = 0; i < a.length; i++)
+					if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
+			}
+		}
+
+		function MM_findObj(n, d) { //v4.01
+			var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+				d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+			}
+			if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+			for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+			if (!x && d.getElementById) x = d.getElementById(n); return x;
+		}
+
+		function MM_swapImage() { //v3.0
+			var i, j = 0, x, a = MM_swapImage.arguments; document.MM_sr = new Array; for (i = 0; i < (a.length - 2); i += 3)
+				if ((x = MM_findObj(a[i])) != null) { document.MM_sr[j++] = x; if (!x.oSrc) x.oSrc = x.src; x.src = a[i + 2]; }
+		}
+
+	</script>
+	<script type="text/javascript">
+		function MM_goToURL() { //v3.0
+			var i, args = MM_goToURL.arguments; document.MM_returnValue = false;
+			for (i = 0; i < (args.length - 1); i += 2) eval(args[i] + ".location='" + args[i + 1] + "'");
+		}
+	</script>
+</head>
+
+<body
+	onLoad="MM_preloadImages('../../imagenes/delivery-truck (1).png','../../imagenes/shopping-cart (1).png','../../imagenes/delivery-truck (1).png','../../imagenes/shopping-cart (1).png','../../imagenes/tienda1.png')">
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+			<div class="container">
+				<a href="#" class="navbar-brand"><img src="../../../imagenes/logo.gif" width="200"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNavegacion"
+					aria-controls="menuNavegacion" aria-expanded="false" aria-label="Alternar Menu">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="menuNavegacion">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a href="../../../Pagina principal/index.html" class="nav-link"><img
+									src="../../../imagenes/home.png" width="40"><br>Inicio</a>
+						</li>
+						<!-- Boton Desplegable -->
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
+								<img src="../../../imagenes/category.png" width="40"><br>Categorias
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a href="../../../Sección - muebles/Salas.html" class="dropdown-item">Sala</a>
+								<a href="../../../Sección - Comedor/Comedor.html" class="dropdown-item">Comedor</a>
+								<a href="../../../Sección - Dormitorio/Dormitorio.html"
+									class="dropdown-item">Dormitorio</a>
+								<a href="#" class="dropdown-item">Oficina</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a href="../../../direccionMaps/direccionMaps.html" class="nav-link"><img
+									src="../../../imagenes/map.png" width="40"><br>Visítanos</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link"><img src="../../../imagenes/information.png"
+									width="40"><br>Acerca
+								de</a>
+						</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<li class="nav-item"><br>
+							<form class="form-inline my-2 my-lg-0" action="">
+								<input type="text" class="form-control mr-sm-2" type="search" placeholder="Buscar">
+								<button class="btn btn-dark my-2 my-sm-0" type="submit">Buscar</button>
+							</form>
+						</li>
+						<!--Sección del formulario-->
+						<div class="formulario">
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
+									<img src="../../../imagenes/user.png" width="40"><br>Iniciar sesión
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<form class="form-inline my-2 my-lg-0" action="">
+										<input type="email" class="form-control mr-sm-2" type="search"
+											placeholder="Ingrese su correo"><br><br>
+										<input type="password" class="form-control mr-sm-2" type="search"
+											placeholder="Ingrese su contraseña"><br><br>
+										<button class="btn btn-dark my-2 my-sm-0"
+											type="submit">Acceder</button>&nbsp;&nbsp;&nbsp;
+										<button class="btn btn-dark my-2 my-sm-0" type="submit"
+											onClick="MM_goToURL('parent','../../../../pagingreso/Registro.html');return document.MM_returnValue">Registrarse</button>
+									</form>
+								</div>
+
+							</li>
+						</div>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="contenedor">
+		<section class="main">
+			<article>
+				<div class="thumb">
+					<img src="img/7.jpg" alt="">
+				</div>
+				<h2>Mesa de noche Issey Grafito</h2>
+				<h4>Características</h4>
+				<ul>
+					<div class="caracteristicas">
+						<li>
+							Ancho: 49 cm
+						</li>
+						<li>
+							Profundidad: 37 cm
+						</li>
+						<li>
+							Alto: 70 cm
+						</li>
+						<li>
+							Material de la estructura: Madera
+						</li>
+						<li>
+							Acabado: Semi brillante
+						</li>
+					</div>
+				</ul>
+
+			</article>
+		</section>
+
+		<aside>
+			<div class="add">
+				<p>Precio</p>
+				<a href="#" onMouseOut="MM_swapImgRestore()"
+					onMouseOver="MM_swapImage('Image5','','../../../imagenes/shopping-cart (1).png',1)"
+					title="Agregar a la bolsa"><img src="../../../imagenes/shopping-cart.png" alt="" width="50"
+						id="Image5"></a>
+				<h6><span class="tachado"> Antes S/.648.90</span></h6>
+				<p class="text-danger">Ahora S/.419.90</p>
+
+				<div class="cantidad">
+					<a>Cantidad</a> <input type="number">
+				</div>
+			</div>
+			<div class="add">
+				<!-- Start WOWSlider.com BODY section -->
+				<div id="wowslider-container1">
+					<div class="ws_images">
+						<ul>
+							<li><img src="data1/images/anniesprattq2qhoxn5enkunsplash.jpg" alt="" title=""
+									id="wows1_0" /></li>
+							<li><img src="data1/images/enginakyurt77c8g157u8unsplash.jpg" alt="" title=""
+									id="wows1_1" /></li>
+							<li><a href="http://wowslider.net"><img src="data1/images/mimithianbyglq32wjx8unsplash.jpg"
+										alt="css image gallery" title="" id="wows1_2" /></a></li>
+							<li><img src="data1/images/outsitecorlk3sqlibwunsplash.jpg" alt="" title="" id="wows1_3" />
+							</li>
+						</ul>
+					</div>
+					<div class="ws_bullets">
+						<div>
+							<a href="#" title=""><span><img src="data1/tooltips/anniesprattq2qhoxn5enkunsplash.jpg"
+										alt="" />1</span></a>
+							<a href="#" title=""><span><img src="data1/tooltips/enginakyurt77c8g157u8unsplash.jpg"
+										alt="" />2</span></a>
+							<a href="#" title=""><span><img src="data1/tooltips/mimithianbyglq32wjx8unsplash.jpg"
+										alt="" />3</span></a>
+							<a href="#" title=""><span><img src="data1/tooltips/outsitecorlk3sqlibwunsplash.jpg"
+										alt="" />4</span></a>
+						</div>
+					</div>
+					<div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">responsive
+							slider</a> by WOWSlider.com v9.0</div>
+					<div class="ws_shadow"></div>
+				</div>
+				<script type="text/javascript" src="engine1/wowslider.js"></script>
+				<script type="text/javascript" src="engine1/script.js"></script>
+				<!-- End WOWSlider.com BODY section -->
+			</div>
+			<div class="add">
+				<p>Tipo de entrega</p>
+				<a href="#" onMouseOut="MM_swapImgRestore()"
+					onMouseOver="MM_swapImage('Image4','','../../../imagenes/delivery-truck (1).png',1)"
+					title="Pedir Delivery"><img src="../../../imagenes/delivery-truck.png" alt="" width="50"
+						id="Image4"></a>
+
+				<a href="#" onMouseOut="MM_swapImgRestore()"
+					onMouseOver="MM_swapImage('tienda','','../../../imagenes/tienda1.png',1)"
+					title="Retiro en tienda"><img src="../../../imagenes/tienda.png" alt="" width="50" id="tienda"></a>
+				<br>
+				<a href="../../../pagtraking/traking.html" class="boton">Sigue tu pedido</a>
+			</div>
+
+		</aside>
+	</div>
+	<footer class="container-fluid">
+
+		<section class="redes-sociales">
+
+			<div class="row border-top py-5">
+				<div class="col">
+					<p class="text-light">Acerca de la empresa</p>
+					<p class="text-secondary">&nbsp;Somos una tienda que &nbsp;comercializa DE TODO para &nbsp;el hogar,
+						oficina o negocio.</p>
+				</div>
+				<div class="col">
+					<p class="text-light">Misión</p>
+					<p class="text-secondary"></span>Brindar el mejor servicio y al mejor precio <br>con todos los
+						protocolos de seguridad a todos nuestros clientes.</p>
+				</div>
+				<div class="col">
+					<p class="text-light">Visión</p>
+					<p class="text-secondary">Para este 2020 ser una de las mejores empresas de muebleria, brindando el
+						mejor servicio en calidad y atención, <br>manteniéndonos como una empresa sólida y confiable
+					</p>
+				</div>
+				<div class="col">
+					<p class="text-light">Síguenos</p>
+					<div class="contenedor">
+						<a class="twitter" href="http://www.twitter.com/falconmasters"><i
+								class="fab fa-twitter"></i></a>
+						<a class="facebook" href="http://www.facebook.com/falconmasters"><i
+								class="fab fa-facebook-square"></i></a>
+						<a class="youtube" href="http://www.facebook.com/falconmasters"><i
+								class="fab fa-youtube"></i></a>
+						<a class="instagram" href="http://www.instagram.com/falconmasters"><i
+								class="fab fa-instagram"></i></a>
+					</div>
+				</div>
+			</div>
+
+		</section>
+	</footer>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="../js/jquery-3.4.1.min.js"></script>
+	<script src="../js/popper.min.js"></script>
+	<script src="../js/bootstrap-4.4.1.js"></script>
+</body>
+
+</html>
