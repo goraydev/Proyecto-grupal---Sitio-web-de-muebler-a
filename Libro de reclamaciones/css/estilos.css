@@ -1,96 +1,118 @@
-header{
+header {
   text-align: center;
 }
 /* ----- ----- FOOTER ----- ----- */
-  footer .redes-sociales {
-    background: #23272b;
-    padding: 60px 0;
-    text-align: center; }
-    
-    footer .redes-sociales .contenedor {
-      display: flex;
-      justify-content: center; }
-      footer .redes-sociales .contenedor a {
-        color: #fff;
-        text-align: center;
-        width: 100px;
-        font-size: 30px;
-        padding: 15px 0;
-        display: block;
-        margin: 0 20px;
-        border-radius: 3px; }
-      footer .redes-sociales .contenedor .twitter:hover {
-          background: #55acee; }
-      footer .redes-sociales .contenedor .facebook:hover {
-          background: #3b5998; }
-      footer .redes-sociales .contenedor .youtube:hover {
-          background: #971b1b; }
-      footer .redes-sociales .contenedor .instagram:hover {
-          background: #952e89; }
+footer .redes-sociales {
+  background: #23272b;
+  padding: 60px 0;
+  text-align: center;
+}
+
+footer .redes-sociales .contenedor {
+  display: flex;
+  justify-content: center;
+}
+footer .redes-sociales .contenedor a {
+  color: #fff;
+  text-align: center;
+  width: 100px;
+  font-size: 30px;
+  padding: 15px 0;
+  display: block;
+  margin: 0 20px;
+  border-radius: 3px;
+}
+footer .redes-sociales .contenedor .twitter:hover {
+  background: #55acee;
+}
+footer .redes-sociales .contenedor .facebook:hover {
+  background: #3b5998;
+}
+footer .redes-sociales .contenedor .youtube:hover {
+  background: #971b1b;
+}
+footer .redes-sociales .contenedor .instagram:hover {
+  background: #952e89;
+}
 
 /*Para el boton flotante*/
-#btn-mas{
-	display: none;
-	
+#btn-mas {
+  display: none;
 }
-.boton-flotante{
-	position: fixed;
-	bottom: 50px;
-	left: 20px;
-}
-
-.redes a, .icon-reclamaciones{
-	display: block;
-	text-decoration: none;
-	background:#FFFFFF;
-	color: black;
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	box-shadow: 0px 1px 10px;
-	text-align: center;
-	transition: all 500ms ease;
-	
+.boton-flotante {
+  position: fixed;
+  bottom: 50px;
+  left: 20px;
 }
 
-.redes a:hover{
-	background: #00bb2d;
-	border-color: black;
+.redes a,
+.icon-reclamaciones {
+  display: block;
+  text-decoration: none;
+  background: #ffffff;
+  color: black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 1px 10px;
+  text-align: center;
+  transition: all 500ms ease;
 }
-.redes a{
-	margin-bottom: -15px;
-	opacity: 0;
-	visibility: hidden;
+
+.redes a:hover {
+  background: #00bb2d;
+  border-color: black;
 }
-#btn-mas:checked~ .redes a{
-	margin-bottom: 10px;
-	opacity: 1;
-	visibility: visible;
+.redes a {
+  margin-bottom: -15px;
+  opacity: 0;
+  visibility: hidden;
 }
-.icon-reclamaciones{
-	cursor: pointer;
+#btn-mas:checked ~ .redes a {
+  margin-bottom: 10px;
+  opacity: 1;
+  visibility: visible;
 }
-#btn-mas:checked ~ .btn-mas .icon-reclamaciones{
-	transform: rotate(360deg);
+.icon-reclamaciones {
+  cursor: pointer;
+}
+#btn-mas:checked ~ .btn-mas .icon-reclamaciones {
+  transform: rotate(360deg);
 }
 /*Fin de boton flotante*/
 
 /*Inicio de estilos para las card*/
-div .card:hover{
-  background-color: rgb(0,0,0,0.2);
+div .card:hover {
+  background-color: rgb(0, 0, 0, 0.2);
 }
-div .dropdown-menu a:hover{
-  background-color: rgb(0,0,0,0.2);
+div .dropdown-menu a:hover {
+  background-color: rgb(0, 0, 0, 0.2);
 }
 /*Fin de estilos para los card*/
 
 /*Estilo de formulario*/
-div .formulario li div{
-  background-color: rgba(83, 86, 94,0.5);
+div .formulario li div {
+  background-color: rgba(83, 86, 94, 0.5);
 }
 
-.errores{
+.errores {
   color: red;
   text-align: left;
   list-style: circle;
+}
+.impo {
+  text-align: left;
+}
+.estilo {
+  width: 500px;
+  padding: 10px;
+  border: 3px transparent black;
+  border-radius: 10px;
+}
+.estilo2 {
+  border-color: rgba(83, 86, 94, 0.8);
+  height: 150px;
+  border: 3px transparent black;
+  outline-style: none;
+  border-radius: 10px;
 }

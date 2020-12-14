@@ -88,3 +88,23 @@ div .formulario li div{
     font-weight: bold;
     font-size: 25px;
 }
+
+.borde{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.borde_final{
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.botones button{
+  position: relative;
+  bottom: -20px;
+}
+.registro{
+  width: 780px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 20px;
+}

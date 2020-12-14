@@ -43,7 +43,8 @@
 							</div>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link"><img src="../imagenes/map.png" width="40"><br>Visítanos</a>
+							<a href="../direccionMaps/direccionMaps.html" class="nav-link"><img
+									src="../imagenes/map.png" width="40"><br>Visítanos</a>
 						</li>
 						<li class="nav-item">
 							<a href="#" class="nav-link"><img src="../imagenes/information.png" width="40"><br>Acerca
@@ -58,7 +59,7 @@
 						<!--Sección del formulario-->
 						<div class="formulario">
 							<li class="nav-item dropdown">
-								<a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
+								<a href="" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
 									<img src="../imagenes/user.png" width="40"><br>Iniciar sesión
 								</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -69,7 +70,8 @@
 											placeholder="Ingrese su contraseña"><br><br>
 										<button class="btn btn-dark my-2 my-sm-0"
 											type="submit">Acceder</button>&nbsp;&nbsp;&nbsp;
-										<button class="btn btn-dark my-2 my-sm-0" type="submit">Registrarse</button>
+										<button class="btn btn-dark my-2 my-sm-0" type="submit"
+											onClick="MM_goToURL('parent','../pagingreso/Registro.html');return document.MM_returnValue">Registrarse</button>
 									</form>
 								</div>
 
@@ -115,57 +117,58 @@
 					<div class="col-md-4 mb-2 offset-xl-3 col-xl-6">
 						<label for="nombres" class="control-label"> Nombres<span class="asteriskField">*</span> </label>
 						<div class="controls">
-							<input class="form-control" id="nombres" maxlength="30" name="nombres"
+							<input class="form-control estilo" id="nombres" maxlength="30" name="nombres"
 								placeholder="Nombre..." type="text">
 						</div>
 					</div>
 					<div class="col-md-4 mb-2 offset-xl-3 col-xl-6">
 						<label for="ape" class="control-label"> Apellidos<span class="asteriskField">*</span> </label>
 						<div class="controls">
-							<input class="form-control" id="ape" maxlength="60" name="ape" placeholder="Apellidos... "
-								type="text">
+							<input class="form-control estilo" id="ape" maxlength="60" name="ape"
+								placeholder="Apellidos... " type="text">
 						</div>
 					</div>
 					<div class="col-md-4 mb-2 offset-xl-3 col-xl-6">
 						<label for="nrodocumento" class="control-label"> DNI<span class="asteriskField">*</span>
 						</label>
 						<div class="controls">
-							<input class="form-control" id="nrodocumento" maxlength="60" name="nrodocumento"
+							<input class="form-control  estilo" id="nrodocumento" maxlength="60" name="nrodocumento"
 								placeholder="DNI..." type="text">
 						</div>
 					</div>
 					<div class="col-md-4 mb-2 offset-xl-3 col-xl-6">
 						<label for="email" class="control-label"> Email<span class="asteriskField">*</span></label>
 						<div class="controls">
-							<input class="form-control" id="email" maxlength="60" name="email" placeholder="Email..."
-								type="text">
+							<input class="form-control estilo" id="email" maxlength="60" name="email"
+								placeholder="Email..." type="text">
 						</div>
 					</div>
 					<div class="col-md-4 mb-2 offset-xl-3 col-xl-6">
 						<label for="tel" class="control-label"> Teléfono y/o celular<span
 								class="asteriskField">*</span></label>
 						<div class="controls">
-							<input class="form-control" id="tel" maxlength="60" name="tel"
+							<input class="form-control estilo" id="tel" maxlength="60" name="tel"
 								placeholder="Teléfono y/o celular..." type="text">
 						</div>
 					</div>
 					<div class="col-md-4 mb-2 offset-xl-3 col-xl-6">
 						<label for="asunto" class="control-label"> Asunto<span class="asteriskField">*</span></label>
 						<div class="controls">
-							<textarea class="form-control" id="asunto" maxlength="60"  name="asunto"
+							<textarea class="form-control estilo2" id="asunto" maxlength="200" name="asunto"
 								placeholder="Asunto..."></textarea>
+							<p class="impo">* Importante</p>
 						</div>
 
 					</div>
-
-					<div class="col-md-4 mb-2 offset-xl-3 col-xl-6">
-						<button class="btn btn-info my-2 my-sm-0" type="submit" value="registrarse">Enviar</button>
-					</div>
 					<div class="col-md-4 mb-2 offset-xl-3 col-xl-6">
 						<ul class="errores" id="errores">
-							
+
 						</ul>
 					</div>
+					<div class="col-md-4 mb-2 offset-xl-3 col-xl-6">
+						<button class="btn btn-info my-2 my-sm-0" type="submit" value="registrarse">Enviar<br></button>
+					</div>
+
 
 				</div>
 			</form>
