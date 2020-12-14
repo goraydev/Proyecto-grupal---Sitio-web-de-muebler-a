@@ -152,10 +152,21 @@
 					<div class="col-md-4 mb-2 offset-xl-3 col-xl-6">
 						<label for="asunto" class="control-label"> Asunto<span class="asteriskField">*</span></label>
 						<div class="controls">
-							<input class="form-control" id="asunto" maxlength="60" name="asunto" placeholder="Asunto..."
-								type="text">
+							<textarea class="form-control" id="asunto" maxlength="60"  name="asunto"
+								placeholder="Asunto..."></textarea>
 						</div>
+
 					</div>
+
+					<div class="col-md-4 mb-2 offset-xl-3 col-xl-6">
+						<button class="btn btn-info my-2 my-sm-0" type="submit" value="registrarse">Enviar</button>
+					</div>
+					<div class="col-md-4 mb-2 offset-xl-3 col-xl-6">
+						<ul class="errores" id="errores">
+							
+						</ul>
+					</div>
+
 				</div>
 			</form>
 		</div>
@@ -199,6 +210,7 @@
 		</section>
 	</footer>
 
+	<script src="js/validando_reclamo.js"></script>
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

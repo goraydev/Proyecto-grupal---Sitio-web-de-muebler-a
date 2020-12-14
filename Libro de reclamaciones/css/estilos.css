@@ -88,3 +88,9 @@ div .dropdown-menu a:hover{
 div .formulario li div{
   background-color: rgba(83, 86, 94,0.5);
 }
+
+.errores{
+  color: red;
+  text-align: left;
+  list-style: circle;
+}
