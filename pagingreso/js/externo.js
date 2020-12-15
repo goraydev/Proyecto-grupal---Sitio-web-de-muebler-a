@@ -53,5 +53,31 @@ function ValidandoDatos(e) {
     ValidarPasswords(e);
 }
 
+function CompCaracNombre(e){
+    var formulario = document.getElementById('formulario');
+    var caracter = formulario.nombre.value;
 
+    let numero ='1' ;
+    var anterior="";
+    for (const key in caracter) {
+        console.log(caracter[key]);
+        if (caracter[key] == '0' || caracter[key] == '1' || caracter[key] == '2' || caracter[key] == '3' || caracter[key] == '4' || caracter[key] == '0' || caracter[key] == '1' || caracter[key] == '2' || caracter[key] == '3' || caracter[key] == '4') {
+            numero='0';
+        }
+	if(numero === '0'){
+		alert('Por favor no ingrese números en este campo');
+	} else {
+		anterior+=caracter[key];
+	}
+    }
+
+    formulario.nombre.value=anterior;
+    e.preventDefault();
+}
+
+function volver(){
+    history.go(-1);
+}
 formulario.addEventListener('submit', ValidandoDatos);
+formulario.addEventListener('submit', CompCaracNombre);
+formulario.addEventListener('submit', volver);
