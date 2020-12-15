@@ -38,7 +38,8 @@ function ValidarPasswords(e) {
             e.preventDefault();
 
         } else {
-            alert('Excelente');
+            alert('Registro exitoso');
+            
         }
     }
 }
