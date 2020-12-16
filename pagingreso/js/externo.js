@@ -79,6 +79,19 @@ function CompCaracNombre(e){
 function volver(){
     history.go(-1);
 }
+
+function mincarpassword(){
+	 var formulario = document.getElementById('formulario');
+    var caracter = formulario.contra1.value;
+console.log(caracter.length);
+	if(caracter.length<10){
+		errores2.style.display= 'block';
+		errores2.innerHTML='Las contraseñas deben de tener como minimo 10 caracteres';	
+	} else {
+		errores2.style.display= 'none';
+	}
+
+}
 formulario.addEventListener('submit', ValidandoDatos);
 formulario.addEventListener('submit', CompCaracNombre);
 formulario.addEventListener('submit', volver);
