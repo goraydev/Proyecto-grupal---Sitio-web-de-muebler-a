@@ -43,17 +43,6 @@ function ValidarPasswords(e) {
         }
     }
 }
-
-function ValidandoDatos(e) {
-    errores.innerHTML = '';
-    errores1.innerHTML = '';
-    errores2.innerHTML = '';
-    errores3.innerHTML = '';
-    ValidarNombre(e);
-    ValidarCorreo(e);
-    ValidarPasswords(e);
-}
-
 function CompCaracNombre(e){
     var formulario = document.getElementById('formulario');
     var caracter = formulario.nombre.value;
@@ -80,18 +69,36 @@ function volver(){
     history.go(-1);
 }
 
-function mincarpassword(){
+function mincarpassword(e){
 	 var formulario = document.getElementById('formulario');
     var caracter = formulario.contra1.value;
 console.log(caracter.length);
 	if(caracter.length<10){
 		errores2.style.display= 'block';
-		errores2.innerHTML='Las contraseñas deben de tener como minimo 10 caracteres';	
+        errores2.innerHTML ='Las contraseñas deben de tener como minimo 10 caracteres';
+        e.preventDefault();
+        
 	} else {
+        errores2.innerHTML = '';
 		errores2.style.display= 'none';
 	}
 
 }
+
+function ValidandoDatos(e) {
+    errores.innerHTML = '';
+    errores1.innerHTML = '';
+    errores2.innerHTML = '';
+    errores3.innerHTML = '';
+    ValidarNombre(e);
+    ValidarCorreo(e);
+    ValidarPasswords(e);
+    CompCaracNombre(e);
+    volver();
+    mincarpassword(e);
+}
+
+
+
+
 formulario.addEventListener('submit', ValidandoDatos);
-formulario.addEventListener('submit', CompCaracNombre);
-formulario.addEventListener('submit', volver);
